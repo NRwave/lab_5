@@ -60,17 +60,17 @@ int main() {
     std::cout << "Method Currently Tested: Binary Test\n";
     start_time = std::chrono::system_clock::now();
     result = binary_search(get_data(), "not_here");
-    std::cout << "Index Found: " << result << "\n";
+    std::cout << "Index Found-------------- " << result << "\n";
     end_time = std::chrono::system_clock::now();
     elapsed = end_time - start_time;
-    std::cout << "Time Taken for Binary Test: " << elapsed.count() << "\n";
+    std::cout << "Time Taken for Binary Test------------- " << elapsed.count() << "\n";
     std::cout << "------------------------------------------------------\n";
 
     std::cout << "Finding 'mwwww'\n";
     std::cout << "Method Currently Tested: Linear Test\n";
     start_time = std::chrono::system_clock::now();
     result = linear_search(get_data(), "mwwww");
-    std::cout << "Index Found: " << result << "\n";
+    std::cout << "Index Found------------- " << result << "\n";
     end_time = std::chrono::system_clock::now();
     elapsed = end_time - start_time;
     std::cout << "Time Taken for Linear Test: " << elapsed.count() << "\n\n";
@@ -92,14 +92,15 @@ int main() {
     end_time = std::chrono::system_clock::now();
     elapsed = end_time - start_time;
     std::cout << "Time Taken for Linear Test: " << elapsed.count() << "\n\n";
-
-    std::cout << "Method Currently Tested:::::: Binary Test\n";
+  
+    std::cout << "Method Currently Tested: Binary Test\n";
     start_time = std::chrono::system_clock::now();
     result = binary_search(get_data(), "aaaaa");
-    std::cout << "Index Found::::: " << result << "\n";
+    std::cout << "Index Found: " << result << "\n";
     end_time = std::chrono::system_clock::now();
     elapsed = end_time - start_time;
-    std::cout << "Time Taken for Binary Test:::: " << elapsed.count() << "\n";
+    std::cout << "Time Taken for Binary Test: " << elapsed.count() << "\n";
+
 
     return 0;
 }
