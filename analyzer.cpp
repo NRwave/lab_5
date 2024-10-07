@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "StringData.h"
 #include <chrono>
 
 int linear_search(const std::vector<std::string>& container, const std::string& element) {
@@ -92,13 +93,13 @@ int main() {
     elapsed = end_time - start_time;
     std::cout << "Time Taken for Linear Test: " << elapsed.count() << "\n\n";
 
-    std::cout << "Method Currently Tested: Binary Test\n";
+    std::cout << "Method Currently Tested:::::: Binary Test\n";
     start_time = std::chrono::system_clock::now();
     result = binary_search(get_data(), "aaaaa");
-    std::cout << "Index Found: " << result << "\n";
+    std::cout << "Index Found::::: " << result << "\n";
     end_time = std::chrono::system_clock::now();
     elapsed = end_time - start_time;
-    std::cout << "Time Taken for Binary Test: " << elapsed.count() << "\n";
+    std::cout << "Time Taken for Binary Test:::: " << elapsed.count() << "\n";
 
     return 0;
 }
